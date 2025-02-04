@@ -1,0 +1,15 @@
+package com.example.Rider.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+import java.io.Serial;
+
+@ResponseStatus(HttpStatus.BAD_REQUEST)
+public class MissingHeaderInfoException extends RuntimeException {
+    @Serial
+    private static final long serialVersionUID = 1L;
+    public MissingHeaderInfoException(String message) {
+        super(message);
+    }
+}

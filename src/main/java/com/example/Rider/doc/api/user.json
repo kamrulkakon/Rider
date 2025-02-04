@@ -1,0 +1,387 @@
+/* Get All User */
+/* http://localhost:5999/api/v1/user */
+{
+  "pageNo": 0,
+  "size": 5,
+  "keyword": ""
+}
+{
+  "pageNo": 0,
+  "size": 5
+}
+
+{
+  "statusCode": 200,
+  "message": "Data has been found",
+  "data": {
+    "content": [
+      {
+        "createdBy": 7,
+        "createdAt": "2023-10-15T06:22:02.267+00:00",
+        "updatedBy": null,
+        "updatedAt": null,
+        "id": 9,
+        "firstName": "Alamin",
+        "middleName": "",
+        "lastName": "Mohammad",
+        "displayName": "Alamin  Mohammad",
+        "email": "alamin@gmail.com",
+        "gender": "MALE",
+        "dateOfBirth": "1985-08-28T00:00:00.000+00:00",
+        "mobile": "01717664275",
+        "isEnabled": true,
+        "roles": [
+          {
+            "createdBy": null,
+            "createdAt": "2023-09-06T05:30:29.417+00:00",
+            "updatedBy": null,
+            "updatedAt": null,
+            "id": 4,
+            "roleName": "ROLE_ADMIN"
+          }
+        ],
+        "isDeleted": "NO",
+        "company": {
+          "createdBy": 7,
+          "createdAt": "2023-10-12T09:44:59.051+00:00",
+          "updatedBy": null,
+          "updatedAt": null,
+          "id": 2,
+          "name": "NIPPON EXPRESS BD",
+          "address": "24/5 Mohakhali",
+          "country": {
+            "createdBy": 7,
+            "createdAt": "2023-10-09T10:04:23.130+00:00",
+            "updatedBy": null,
+            "updatedAt": null,
+            "id": 1,
+            "name": "Bangladesh",
+            "isDeleted": "NO"
+          },
+          "isDeleted": "NO"
+        }
+      },
+      {
+        "createdBy": null,
+        "createdAt": "2023-09-06T05:30:29.421+00:00",
+        "updatedBy": null,
+        "updatedAt": null,
+        "id": 7,
+        "firstName": "Shibli",
+        "middleName": null,
+        "lastName": "Osmani",
+        "displayName": "Shibli Osmani",
+        "email": "shibli.shadik@gmail.com",
+        "gender": null,
+        "dateOfBirth": null,
+        "mobile": null,
+        "isEnabled": true,
+        "roles": [
+          {
+            "createdBy": null,
+            "createdAt": "2023-09-06T05:30:29.417+00:00",
+            "updatedBy": null,
+            "updatedAt": null,
+            "id": 4,
+            "roleName": "ROLE_ADMIN"
+          }
+        ],
+        "isDeleted": "NO",
+        "company": {
+          "createdBy": 7,
+          "createdAt": "2023-10-12T09:44:59.051+00:00",
+          "updatedBy": null,
+          "updatedAt": null,
+          "id": 2,
+          "name": "NIPPON EXPRESS BD",
+          "address": "24/5 Mohakhali",
+          "country": {
+            "createdBy": 7,
+            "createdAt": "2023-10-09T10:04:23.130+00:00",
+            "updatedBy": null,
+            "updatedAt": null,
+            "id": 1,
+            "name": "Bangladesh",
+            "isDeleted": "NO"
+          },
+          "isDeleted": "NO"
+        }
+      }
+    ],
+    "pageable": {
+      "pageNumber": 0,
+      "pageSize": 5,
+      "sort": {
+        "empty": true,
+        "sorted": false,
+        "unsorted": true
+      },
+      "offset": 0,
+      "paged": true,
+      "unpaged": false
+    },
+    "last": true,
+    "totalElements": 2,
+    "totalPages": 1,
+    "size": 5,
+    "number": 0,
+    "sort": {
+      "empty": true,
+      "sorted": false,
+      "unsorted": true
+    },
+    "first": true,
+    "numberOfElements": 2,
+    "empty": false
+  },
+  "success": true
+}
+
+/* Get User Datails */
+/* http://localhost:5999/api/v1/user/details/7 */
+{
+  "statusCode": 200,
+  "message": "Data has been found",
+  "data": {
+    "createdBy": null,
+    "createdAt": "2023-09-06T05:30:29.421+00:00",
+    "updatedBy": null,
+    "updatedAt": null,
+    "id": 7,
+    "firstName": "Shibli",
+    "middleName": null,
+    "lastName": "Osmani",
+    "displayName": "Shibli Osmani",
+    "email": "shibli.shadik@gmail.com",
+    "gender": null,
+    "dateOfBirth": null,
+    "mobile": null,
+    "isEnabled": true,
+    "roles": [
+      {
+        "createdBy": null,
+        "createdAt": "2023-09-06T05:30:29.417+00:00",
+        "updatedBy": null,
+        "updatedAt": null,
+        "id": 4,
+        "roleName": "ROLE_ADMIN"
+      }
+    ],
+    "isDeleted": "NO",
+    "company": {
+      "createdBy": 7,
+      "createdAt": "2023-10-12T09:44:59.051+00:00",
+      "updatedBy": null,
+      "updatedAt": null,
+      "id": 2,
+      "name": "NIPPON EXPRESS BD",
+      "address": "24/5 Mohakhali",
+      "country": {
+        "createdBy": 7,
+        "createdAt": "2023-10-09T10:04:23.130+00:00",
+        "updatedBy": null,
+        "updatedAt": null,
+        "id": 1,
+        "name": "Bangladesh",
+        "isDeleted": "NO"
+      },
+      "isDeleted": "NO"
+    }
+  },
+  "success": true
+}
+
+/*No record found */
+{
+  "status": "INCORRECT_REQUEST",
+  "message": "No record found for given value: 3"
+}
+
+/* Save User */
+/* http://localhost:5999/api/v1/user/new */
+{
+  "firstName": "Alamin",
+  "middleName": "",
+  "lastName": "Mohammad",
+  "email": "alamin@gmail.com",
+  "gender": "MALE",
+  "dateOfBirth": "1985-08-28",
+  "mobile": "01717664275",
+  "role": "ROLE_ADMIN",
+  "company": {
+    "id": 2
+  }
+}
+
+{
+  "firstName": "Momin",
+  "middleName": "",
+  "lastName": "Joarder",
+  "email": "momin@gmail.com",
+  "gender": "MALE",
+  "dateOfBirth": "1981-07-20",
+  "mobile": "01317664275",
+  "role": "ROLE_USER",
+  "company": {
+    "id": 2
+  }
+}
+
+{
+  "statusCode": 201,
+  "message": "alamin@gmail.com has been saved successfully",
+  "data": null,
+  "success": true
+}
+
+/* Update User */
+/* http://localhost:5999/api/v1/user/update */
+{
+  "id": "9",
+  "firstName": "Momin1",
+  "middleName": "",
+  "lastName": "Joarder1",
+  "email": "momin@gmail.com",
+  "gender": "MALE",
+  "dateOfBirth": "1981-07-20",
+  "mobile": "01317664276",
+  "role": "ROLE_USER",
+  "company": {
+    "id": 2
+  }
+}
+
+{
+  "statusCode": 201,
+  "message": "User has been updated successfully",
+  "data": {
+    "createdBy": 7,
+    "createdAt": "2023-10-15T06:22:02.267+00:00",
+    "updatedBy": 7,
+    "updatedAt": "2023-10-15T06:52:46.549+00:00",
+    "id": 9,
+    "firstName": "Momin1",
+    "middleName": "",
+    "lastName": "Joarder1",
+    "displayName": "Momin1  Joarder1",
+    "email": "momin@gmail.com",
+    "gender": "MALE",
+    "dateOfBirth": "1981-07-20T00:00:00.000+00:00",
+    "mobile": "01317664276",
+    "isEnabled": true,
+    "roles": [
+      {
+        "createdBy": null,
+        "createdAt": "2023-09-06T05:30:29.296+00:00",
+        "updatedBy": null,
+        "updatedAt": null,
+        "id": 3,
+        "roleName": "ROLE_USER"
+      }
+    ],
+    "isDeleted": "NO",
+    "company": {
+      "createdBy": null,
+      "createdAt": "2023-10-15T06:52:46.505+00:00",
+      "updatedBy": null,
+      "updatedAt": null,
+      "id": 2,
+      "name": null,
+      "address": null,
+      "country": null,
+      "isDeleted": "NO"
+    }
+  },
+  "success": true
+}
+
+/* Delete User Datails */
+/* http://localhost:5999/api/v1/user/delete/9 */
+{
+  "statusCode": 201,
+  "message": "9 has been deleted successfully",
+  "data": {
+    "createdBy": 7,
+    "createdAt": "2023-10-15T06:22:02.267+00:00",
+    "updatedBy": 7,
+    "updatedAt": "2023-10-15T07:08:12.688+00:00",
+    "id": 9,
+    "firstName": "Momin1",
+    "middleName": "",
+    "lastName": "Joarder1",
+    "displayName": "Momin1  Joarder1",
+    "email": "alamin@gmail.com",
+    "gender": "MALE",
+    "dateOfBirth": "1981-07-20T00:00:00.000+00:00",
+    "mobile": "01317664276",
+    "isEnabled": true,
+    "roles": [
+      {
+        "createdBy": null,
+        "createdAt": "2023-09-06T05:30:29.296+00:00",
+        "updatedBy": null,
+        "updatedAt": null,
+        "id": 3,
+        "roleName": "ROLE_USER"
+      }
+    ],
+    "isDeleted": "YES",
+    "company": {
+      "createdBy": 7,
+      "createdAt": "2023-10-12T09:44:59.051+00:00",
+      "updatedBy": null,
+      "updatedAt": null,
+      "id": 2,
+      "name": "NIPPON EXPRESS BD",
+      "address": "24/5 Mohakhali",
+      "country": {
+        "createdBy": 7,
+        "createdAt": "2023-10-09T10:04:23.130+00:00",
+        "updatedBy": null,
+        "updatedAt": null,
+        "id": 1,
+        "name": "Bangladesh",
+        "isDeleted": "NO"
+      },
+      "isDeleted": "NO"
+    }
+  },
+  "success": true
+}
+
+/* Test purpose */
+{
+  "firstName": "Alamin",
+  "middleName": "",
+  "lastName": "Mohammad",
+  "email": "alamin@gmail.com",
+  "password": "alamin",
+  "roles": [
+    {
+      "roleName": "ROLE_ADMIN"
+    }
+  ]
+}
+
+/* Get role type */
+/* http://localhost:5999/api/v1/user/roleType */
+
+{
+  "statusCode": 200,
+  "message": "Data has been found",
+  "data": [
+    {
+      "value": "Administrator",
+      "roleName": "ROLE_ADMIN"
+    },
+    {
+      "value": "Super Administrator",
+      "roleName": "ROLE_SUPER_ADMIN"
+    },
+    {
+      "value": "User",
+      "roleName: "ROLE_USER"
+    }
+  ],
+  "success": true
+}
